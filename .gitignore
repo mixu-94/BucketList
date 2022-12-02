@@ -7,5 +7,4 @@
 /frontend/node_modules
 /backend/build
 /backend/node_modules
-
-/woche6/.env.*
+/backend/env.*
