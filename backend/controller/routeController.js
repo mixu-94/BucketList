@@ -8,17 +8,21 @@ export const getAllTasks = async (req, res) => {
 };
 
 export const addNewTask = async (req, res) => {
-  const { name, lastname, age } = req.body;
-  Task.create({ name: name, lastname: lastname, age: age })
-    .then((newUser) => res.status(200).json(newUser))
+  const { name, description, category } = req.body;
+  Task.create({ name: name, description: description, category: category })
+    .then((newTask) => res.status(200).json(newTask))
     .catch((err) => res.status(404).json(err.message));
 };
+
+//Single Tasks
 export const getSingleTask = async (req, res) => {
   const { id } = req.params;
 
-  Task.findById(id).then((task) => console.log(task));
-  res.status(200).send({ msg: "singlepost ggg" });
+  const singletask = await Task.findById(id);
+  console.log(singletask);
+  res.status(200).json(singletask);
 };
+
 export const deleteTask = async (req, res) => {
   const { id } = req.params;
 
@@ -30,15 +34,10 @@ export const updateTask = async (req, res) => {
   const { name, description, category, done } = req.body;
   const { id } = req.params;
 
-  await Task.findOneAndUpdate(
+  const updatedTask = await Task.findOneAndUpdate(
     { _id: id },
     { name: name, description: description, category: category, done: done },
     { new: true }
-  ).then(res.status(200).send({ msg: "geht" }));
+  );
+  res.status(200).json(updatedTask);
 };
-
-// export const getAllTasks = async (req, res) => {};
-// export const getAllTasks = async (req, res) => {};
-// export const getAllTasks = async (req, res) => {};
-// export const getAllTasks = async (req, res) => {};
-// export const getAllTasks = async (req, res) => {};
