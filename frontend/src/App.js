@@ -1,10 +1,15 @@
 import "./App.css";
-import TaskPage from "./components/TaskPage/TaskPage";
+
+import Layout from "./Layout";
+import Router from "./pages/Router";
 
 function App() {
   return (
     <div className="App">
-      <TaskPage />
+      <Layout>
+        {/* <div><h1>Hallo Welt</h1></div> */}
+        <Router />
+      </Layout>
     </div>
   );
 }
