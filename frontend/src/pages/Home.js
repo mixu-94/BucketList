@@ -1,25 +1,27 @@
-import React from 'react';
-import Nav from '../components/Main/Nav';
-import Navigation from '../components/Main/Navigation';
+import React from "react";
+import Nav from "../components/Main/Nav";
+import Navigation from "../components/Main/Navigation";
 
 const Home = () => {
+  // TODO Funktionen für Seitenwechsel
+  // useState übergaben
   return (
     <>
-      <div className="text-xl text-black font-semibold m-4 border-width: 2px text-center">
+      <div className="text-xl text-black font-semibold m-4 border-width: 2px text-center bg-gray-400">
         <Nav />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
+        <br />
         <h1>Ich bin die Home</h1>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <Navigation />
       </div>
     </>
