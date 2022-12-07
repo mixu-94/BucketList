@@ -1,0 +1,36 @@
+.taskfield {
+    background-color: green;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.taskfield-name {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.taskfield-buttons {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    
+}
+
+.taskfield-more {
+    margin-right: 10px ;
+}
+.taskfield-more button {
+    background-color: white;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+.taskfield-checkmark{
+    cursor: pointer;
+    user-select: none;
+}
