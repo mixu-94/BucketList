@@ -11,12 +11,12 @@ const Nav = () => {
   return (
     <div className="bg-[#84A98C] text-center p-3 rounded-xl">
         <ul>
-            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52]"><TiSortAlphabetically/></li>
-            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52]"><TbPlant/></li>
-            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52]"><FaHeartbeat/></li>
-            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52]"><RiUserHeartFill/></li>
-            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52]"><GiOfficeChair/></li>
-            <li className="p-3  inline-block bg-white rounded-full"><AiOutlineDollarCircle/></li>
+            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52] hover:bg-[#CAD2C5]"><TiSortAlphabetically/></li>
+            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52] hover:bg-[#CAD2C5]"><TbPlant/></li>
+            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52] hover:bg-[#CAD2C5]"><FaHeartbeat/></li>
+            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52] hover:bg-[#CAD2C5]"><RiUserHeartFill/></li>
+            <li className="p-3 mr-2 inline-block bg-white rounded-full text-[#354F52] hover:bg-[#CAD2C5]"><GiOfficeChair/></li>
+            <li className="p-3  inline-block bg-white rounded-full hover:bg-[#CAD2C5]"><AiOutlineDollarCircle/></li>
         </ul>
         <p classname="text-[#354F52]">Category: ....</p>
     
