@@ -1,0 +1,21 @@
+.modalBackground {
+    width: 80%;
+    height: auto; 
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%
+    !important; top:20%;
+  }
+
+
+  /* @media only screen and (min-width: 600px){
+
+    .modalBackground {
+        width: 80%;
+        height: auto; 
+      }
+
+  }; */
