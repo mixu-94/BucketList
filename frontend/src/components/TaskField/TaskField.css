@@ -1,21 +1,38 @@
 .taskfield {
-    background-color: green;
+    background-color: #31d51ca4;
     height: 50px;
     display: flex;
     align-items: center;
     border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
 
+
+}
+.taskfield:hover {
+   opacity: 0.7;
 }
 
 .taskfield-name {
-    width: 70%;
+    display: inline-block;
     margin-left: 10px;
+    max-width: calc(65%);
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
 }
 
+
+
 .taskfield-buttons {
+
     display: flex;
-    width: 30%;
+    justify-content: flex-start;
     align-items: center;
+    margin-right: 10px;
     
 }
 
@@ -31,6 +48,6 @@
 }
 
 .taskfield-checkmark{
-    cursor: pointer;
+    
     user-select: none;
 }
