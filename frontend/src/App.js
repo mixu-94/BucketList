@@ -2,6 +2,7 @@ import "./App.css";
 
 import Layout from "./Layout";
 import Router from "./pages/Router";
+import useFetch from "./useFetch";
 
 function App() {
 
