@@ -1,14 +1,71 @@
 .modalBackground {
-    width: 80%;
+  
     height: auto; 
     background-color: rgba(200, 200, 200);
-    position: fixed;
+    position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    width:40%
+    /* align-items: center; */
+    vertical-align: middle;
+    width:80%
     !important; top:20%;
   }
+
+  /* input[type="radio"]{
+    appearance: none;
+} */
+
+input[type=radio]:checked  {
+  border: 1px solid #fff;
+  /* box-shadow: 0 0 3px 3px #090; */
+}
+.radiobuttons {
+  
+  background-color: #18f98d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+input[type=radio],
+input[type=checkbox] {
+  display: none;
+}
+form input[type="radio"]:checked + label {
+  background-color: yellow;
+}
+label {
+  display: block;
+  appearance: button;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  /* font-family: 'Roboto', sans-serif;
+  font-weight: 400; */
+  /* background: #DDDDDD;
+  font-size: 1.6rem; */
+  color: #111111;
+  border: 2px solid #AAAAAA;
+  /* padding: 8px; */
+  /* width: 40%; */
+  margin: 0 auto;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 
 
   /* @media only screen and (min-width: 600px){
